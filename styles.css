@@ -17,7 +17,7 @@
   --radius:     14px;
   --radius-l:   22px;
   --max-w:      1200px;
-  --nav-h:      84px;
+  --nav-h:      96px;
 }
 
 /* ── Reset ── */
@@ -106,7 +106,7 @@ h4 { font-size: 1rem; font-weight: 700; }
 }
 
 .logo-link { display: flex; align-items: center; gap: 0.5rem; }
-.logo { height: 60px; width: auto; display: block; }
+.logo { height: 80px; width: auto; display: block; }
 .logo-text { font-weight: 800; font-size: 1.1rem; }
 
 .site-nav { display: flex; align-items: center; gap: 0.15rem; }
@@ -120,14 +120,16 @@ h4 { font-size: 1rem; font-weight: 700; }
 .site-nav a:hover, .site-nav a.active { color: var(--text); background: rgba(255,255,255,0.04); }
 
 .nav-cta {
-  background: var(--accent) !important;
-  color: #061209 !important;
+  background: transparent !important;
+  color: var(--accent) !important;
+  border: 1.5px solid var(--accent) !important;
   font-weight: 700;
-  padding: 0.6rem 1.2rem !important;
+  padding: 0.55rem 1.2rem !important;
   border-radius: 999px !important;
   margin-left: 0.6rem;
+  transition: background 0.2s, color 0.2s !important;
 }
-.nav-cta:hover { opacity: 0.87; background: var(--accent) !important; }
+.nav-cta:hover { background: var(--accent) !important; color: #061209 !important; }
 
 .nav-toggle {
   display: none;
@@ -202,7 +204,7 @@ h4 { font-size: 1rem; font-weight: 700; }
 .hero-bg {
   position: absolute; inset: 0;
   background-size: cover;
-  background-position: center;
+  background-position: center top;
 }
 .hero-overlay {
   position: absolute; inset: 0;
@@ -221,6 +223,7 @@ h4 { font-size: 1rem; font-weight: 700; }
   margin-bottom: 2rem;
 }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 1rem; }
+.hero-actions .btn { border-radius: 6px; }
 .hero-stats {
   display: flex;
   gap: 2.5rem;
@@ -574,7 +577,7 @@ h4 { font-size: 1rem; font-weight: 700; }
 
 @media (max-width: 768px) {
   :root { --nav-h: 76px; }
-  .logo { height: 48px; }
+  .logo { height: 60px; }
   .section { padding: 3.5rem 0; }
   h1 { font-size: clamp(1.9rem,7vw,2.6rem); }
   .grid-2, .grid-3 { grid-template-columns: 1fr; }
