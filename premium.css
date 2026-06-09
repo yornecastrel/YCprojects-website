@@ -73,6 +73,10 @@ html,body{height:100%;margin:0;background:linear-gradient(180deg, rgba(58,184,75
 .reveal{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease}
 .reveal.show{opacity:1;transform:none}
 
+/* Filter knoppen */
+.filter-row{display:flex;flex-wrap:wrap;gap:.6rem;margin-bottom:1.4rem}
+.filter-row .btn-outline.active,.filter-row .btn-outline:hover{background:var(--accent);color:#09110b;border-color:var(--accent)}
+
 /* Hero slider */
 .hero-slider{position:relative;min-height:78vh;display:block;overflow:hidden;border-radius:14px}
 .hero-slider .slide{position:absolute;inset:0;background-size:cover;background-position:center;display:flex;align-items:center}

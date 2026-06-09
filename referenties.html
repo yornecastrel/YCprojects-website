@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Referenties — YC Projects | Portfolio tuinprojecten België</title>
-  <meta name="description" content="Bekijk gerealiseerde projecten van YC Projects: terrassen, poolhouses, tuinafschermingen en tuinrenovaties. Inspiratie en projectdetails." />
+  <meta name="description" content="Bekijk gerealiseerde projecten van YC Projects: terrassen, poolhouses, tuinafschermingen en tuinrenovaties in België." />
   <meta property="og:title" content="Referenties — YC Projects" />
   <meta property="og:description" content="Portfolio en referentieprojecten van YC Projects uit België. Bekijk voorbeelden en vraag een offerte aan." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -34,7 +34,7 @@
   </header>
 
   <main>
-    <section class="section-large">
+    <section class="section-large reveal" data-reveal-delay="0.05">
       <div class="container">
         <p class="eyebrow">Portfolio</p>
         <h1>Referentieprojecten</h1>
@@ -45,72 +45,132 @@
     <section class="section-large">
       <div class="container">
         <div class="filter-row">
-          <button class="btn btn-outline" data-filter="all">Alles</button>
+          <button class="btn btn-outline active" data-filter="all">Alles</button>
           <button class="btn btn-outline" data-filter="Terras">Terrassen</button>
           <button class="btn btn-outline" data-filter="Poolhouse">Poolhouses</button>
-          <button class="btn btn-outline" data-filter="Tuinafscherming">Afscheidingen</button>
+          <button class="btn btn-outline" data-filter="Tuinafscherming">Afschermingen</button>
           <button class="btn btn-outline" data-filter="Tuinrenovatie">Renovaties</button>
         </div>
       </div>
 
       <div class="container projects-grid" id="projectsGrid">
-        <article class="project-card" data-type="Terras">
-          <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1200&q=80" alt="Houten terras met verlichting">
+
+        <!-- TERRASSEN -->
+        <article class="project-card reveal" data-type="Terras" data-reveal-delay="0.08">
+          <img src="assets/images/terrassen/374.jpg" alt="Houten terras met zwembad" loading="lazy">
           <div class="project-content">
-            <h3>Houten terras & sfeerverlichting</h3>
+            <h3>Houten terras met zwembad</h3>
             <p class="muted">Terras</p>
-            <p>Warm houten terras met geïntegreerde LED-verlichting en hoogwaardige afwerking.</p>
+            <p>Rondom terras in duurzaam hardhout, perfect geïntegreerd rondom het zwembad.</p>
           </div>
         </article>
 
-        <article class="project-card" data-type="Poolhouse">
-          <img src="https://images.unsplash.com/photo-1505691723518-36a7be3fbc1f?auto=format&fit=crop&w=1200&q=80" alt="Modern poolhouse exterior">
+        <article class="project-card reveal" data-type="Terras" data-reveal-delay="0.10">
+          <img src="assets/images/terrassen/278.jpg" alt="Terras in blauwe hardsteen" loading="lazy">
           <div class="project-content">
-            <h3>Modern poolhouse met lounge</h3>
+            <h3>Terras in blauwe hardsteen</h3>
+            <p class="muted">Terras</p>
+            <p>Strak terras in blauwe hardsteen met nette boordstenen en naadloze afwerking.</p>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-type="Terras" data-reveal-delay="0.12">
+          <img src="assets/images/terrassen/264.jpg" alt="Kasseien terras en traptreden" loading="lazy">
+          <div class="project-content">
+            <h3>Kasseien terras & traptreden</h3>
+            <p class="muted">Terras</p>
+            <p>Klassiek kasseien terras met geïntegreerde trapconstructie en keermuren.</p>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-type="Terras" data-reveal-delay="0.14">
+          <img src="assets/images/terrassen/368.jpg" alt="Rond houten terras-element" loading="lazy">
+          <div class="project-content">
+            <h3>Rond houten terras-element</h3>
+            <p class="muted">Terras</p>
+            <p>Uniek rond houten terras gecombineerd met kasseien — een echte blikvanger.</p>
+          </div>
+        </article>
+
+        <!-- POOLHOUSES -->
+        <article class="project-card reveal" data-type="Poolhouse" data-reveal-delay="0.08">
+          <img src="assets/images/poolhouses/6044.jpg" alt="Modern poolhouse bij avond" loading="lazy">
+          <div class="project-content">
+            <h3>Modern poolhouse by night</h3>
             <p class="muted">Poolhouse</p>
-            <p>Strak vormgegeven poolhouse met volledige afwerking en integratie van voorzieningen.</p>
+            <p>Eigentijds poolhouse met plat dak, geïntegreerde verlichting en open luifel.</p>
           </div>
         </article>
 
-        <article class="project-card" data-type="Tuinafscherming">
-          <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1200&q=80" alt="Tuinafscheiding van hout en metaal">
+        <article class="project-card reveal" data-type="Poolhouse" data-reveal-delay="0.10">
+          <img src="assets/images/poolhouses/445.jpg" alt="Klassiek houten poolhouse" loading="lazy">
           <div class="project-content">
-            <h3>Stijlvolle tuinafscherming</h3>
+            <h3>Klassiek houten poolhouse</h3>
+            <p class="muted">Poolhouse</p>
+            <p>Traditioneel afgewerkt poolhouse in hout met zadeldak en sierlijke details.</p>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-type="Poolhouse" data-reveal-delay="0.12">
+          <img src="assets/images/poolhouses/489.jpg" alt="Luxe poolhouse met schuifpui" loading="lazy">
+          <div class="project-content">
+            <h3>Luxe poolhouse met schuifpui</h3>
+            <p class="muted">Poolhouse</p>
+            <p>Strak modern poolhouse met donkere gevelbekleding, grote schuifpui en luifel.</p>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-type="Poolhouse" data-reveal-delay="0.14">
+          <img src="assets/images/poolhouses/446.jpg" alt="Houten poolhouse met tuin" loading="lazy">
+          <div class="project-content">
+            <h3>Houten poolhouse met tuinintegratie</h3>
+            <p class="muted">Poolhouse</p>
+            <p>Volledig afgewerkt houten poolhouse, naadloos geïntegreerd in de omliggende tuin.</p>
+          </div>
+        </article>
+
+        <!-- AFSCHERMINGEN -->
+        <article class="project-card reveal" data-type="Tuinafscherming" data-reveal-delay="0.08">
+          <img src="assets/images/afschermingen/260.jpg" alt="Houten tuinafscherming" loading="lazy">
+          <div class="project-content">
+            <h3>Houten tuinafscherming</h3>
             <p class="muted">Tuinafscherming</p>
-            <p>Duurzame afscheidingen met moderne materialen en nette plaatsing voor meer privacy.</p>
+            <p>Stevige houten afscherming voor maximale privacy met een warme uitstraling.</p>
           </div>
         </article>
 
-        <article class="project-card" data-type="Terras">
-          <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1200&q=80" alt="Natuurstenen terras met pergola">
+        <article class="project-card reveal" data-type="Tuinafscherming" data-reveal-delay="0.10">
+          <img src="assets/images/afschermingen/378.jpg" alt="Moderne tuinafscherming" loading="lazy">
           <div class="project-content">
-            <h3>Natuurstenen terras & pergola</h3>
-            <p class="muted">Terras</p>
-            <p>Robuuste natuursteen gecombineerd met een elegante pergola — perfect voor buitenleven.</p>
+            <h3>Moderne privacy-afscherming</h3>
+            <p class="muted">Tuinafscherming</p>
+            <p>Strakke afscherming in duurzame materialen, op maat geplaatst voor volledige privacy.</p>
           </div>
         </article>
 
-        <article class="project-card" data-type="Tuinrenovatie">
-          <img src="https://images.unsplash.com/photo-1505691723516-5bd0ecb6d0d8?auto=format&fit=crop&w=1200&q=80" alt="Tuinrenovatie met groen ontwerp">
+        <!-- TUINRENOVATIE -->
+        <article class="project-card reveal" data-type="Tuinrenovatie" data-reveal-delay="0.08">
+          <img src="assets/images/tuinrenovatie/460.jpg" alt="Complete tuinrenovatie" loading="lazy">
           <div class="project-content">
             <h3>Complete tuinrenovatie</h3>
             <p class="muted">Tuinrenovatie</p>
-            <p>Strategische herinrichting met aandacht voor beplanting, drainage en functionele zones.</p>
+            <p>Volledige herinrichting met kunstgras, kasseienpad en nieuwe beplanting.</p>
           </div>
         </article>
 
-        <article class="project-card" data-type="Buitenconstructies">
-          <img src="https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1200&q=80" alt="Buitenconstructie en overkapping">
+        <article class="project-card reveal" data-type="Tuinrenovatie" data-reveal-delay="0.10">
+          <img src="assets/images/tuinrenovatie/1000013404.jpg" alt="Corten stalen plantenbak" loading="lazy">
           <div class="project-content">
-            <h3>Buitenconstructies & overkappingen</h3>
-            <p class="muted">Buitenconstructies</p>
-            <p>Maatwerk overkappingen en buitenconstructies voor uitbreiding van uw leefruimte buiten.</p>
+            <h3>Corten stalen plantenbakken</h3>
+            <p class="muted">Tuinrenovatie</p>
+            <p>Robuuste corten stalen plantenbakken als stijlvol accent in de tuin.</p>
           </div>
         </article>
+
       </div>
     </section>
 
-    <section class="section-large section-dark cta-strip">
+    <section class="section-large section-dark cta-strip reveal" data-reveal-delay="0.1">
       <div class="container cta-card">
         <div>
           <p class="eyebrow">Uw project als volgende</p>
