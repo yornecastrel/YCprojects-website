@@ -3,262 +3,394 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>YC Projects — Premium terrassen, poolhouses & tuinprojecten (België)</title>
-    <meta name="description" content="YC Projects ontwerpt en realiseert hoogwaardige terrassen, poolhouses, tuinafschermingen en tuinrenovaties in België. Vraag een vrijblijvende offerte aan." />
-    <meta property="og:title" content="YC Projects — Premium terrassen, poolhouses & tuinprojecten" />
-    <meta property="og:description" content="YC Projects ontwerpt en realiseert hoogwaardige buitenprojecten in België. Terrassen, poolhouses, tuinafschermingen en renovaties." />
-    <meta property="og:image" content="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1600&q=80" />
-    <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary_large_image" />
+  <title>YC Projects — Premium Tuinprojecten in België | Terrassen, Poolhouses & Tuinrenovaties</title>
+  <meta name="description" content="YC Projects realiseert premium buitenruimtes in België: terrassen, poolhouses, tuinafschermingen en tuinrenovaties. Vraag vrijblijvend een offerte aan." />
+  <meta name="keywords" content="terrassen België, terras laten aanleggen, poolhouse bouwen, tuinafscherming plaatsen, tuinrenovatie België, tuinprojecten" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="YC Projects — Premium Tuinprojecten in België" />
+  <meta property="og:description" content="Premium buitenruimtes op maat: terrassen, poolhouses, tuinafschermingen en renovaties. Ontdek onze realisaties." />
+  <meta property="og:image" content="assets/images/terrassen/374.jpg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="premium.css" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Organization",
+    "@type": "LocalBusiness",
     "name": "YC Projects",
-    "url": "https://ycprojects.example",
-    "logo": "https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=400&q=80",
-    "contactPoint": [{
-      "@type": "ContactPoint",
-      "telephone": "+32 470 123 456",
-      "contactType": "customer service",
-      "areaServed": "BE",
-      "availableLanguage": ["Dutch","English","French"]
-    }]
+    "description": "Premium buitenprojecten in België: terrassen, poolhouses, tuinafschermingen en tuinrenovaties.",
+    "address": { "@type": "PostalAddress", "addressCountry": "BE" },
+    "areaServed": "België",
+    "serviceType": ["Terrassen", "Poolhouses", "Tuinafschermingen", "Tuinrenovaties"]
   }
   </script>
 </head>
 <body>
+
+  <!-- NAVIGATIE -->
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand logo-link" href="index.html">
-        <img src="assets/images/YC Projects_logo.png" alt="YC Projects logo" class="logo">
+      <a href="index.html" class="logo-link" aria-label="YC Projects — Home">
+        <img src="assets/images/YC Projects_logo.png" alt="YC Projects" class="logo" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+        <span class="logo-text" style="display:none">YC Projects</span>
       </a>
-      <button class="nav-toggle" id="navToggle" aria-label="Open navigatie" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu openen" aria-expanded="false">
+        <span></span><span></span><span></span>
       </button>
       <nav class="site-nav" id="siteNav">
-        <a href="index.html">Home</a>
+        <a href="index.html" class="active">Home</a>
         <a href="diensten.html">Diensten</a>
         <a href="referenties.html">Referenties</a>
-        <a href="contact.html" class="nav-cta">Contact</a>
+        <a href="contact.html" class="nav-cta">Offerte aanvragen</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <section class="hero-hero reveal" data-reveal-delay="0.05" aria-label="Hero slider">
-      <div class="hero-slider" id="heroSlider">
-        <div class="slide" style="background-image:url('assets/images/terrassen/374.jpg')">
-          <div class="slide-inner">
-            <p class="eyebrow">YC Projects — Premium buitenprojecten</p>
-            <h1>Tijdloze terrassen & exclusieve poolhouses</h1>
-            <p class="hero-lead">Vakmanschap, duurzame materialen en een ontwerp dat naadloos aansluit bij uw woning.</p>
-            <div class="hero-actions">
-              <a href="contact.html#contact-form" class="btn btn-primary">Offerte aanvragen</a>
-              <a href="referenties.html" class="btn btn-outline">Bekijk projecten</a>
-            </div>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-bg" style="background-image:url('assets/images/terrassen/374.jpg')"></div>
+      <div class="hero-overlay"></div>
+      <div class="container">
+        <div class="hero-content">
+          <p class="eyebrow">Premium buitenprojecten in België</p>
+          <h1>Uw tuin, onze <em>passie</em>.<br>Elk project op maat.</h1>
+          <p class="hero-lead">Van strak terras tot luxe poolhouse — YC Projects realiseert hoogwaardige buitenruimtes die jaar na jaar indruk maken.</p>
+          <div class="hero-actions">
+            <a href="contact.html" class="btn btn-primary btn-lg">Offerte aanvragen</a>
+            <a href="referenties.html" class="btn btn-ghost btn-lg">Bekijk realisaties</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-item"><strong>15+</strong><span>Jaar ervaring</span></div>
+            <div class="stat-item"><strong>200+</strong><span>Projecten gerealiseerd</span></div>
+            <div class="stat-item"><strong>100%</strong><span>Tevreden klanten</span></div>
           </div>
         </div>
-        <div class="slide" style="background-image:url('assets/images/poolhouses/6044.jpg')">
-          <div class="slide-inner">
-            <p class="eyebrow">Ontwerp & realisatie</p>
-            <h1>Poolhouses met moderne allure</h1>
-            <p class="hero-lead">Comfortabele buitenruimtes, perfect afgewerkt en klaar voor jarenlang gebruik.</p>
-            <div class="hero-actions">
-              <a href="contact.html#contact-form" class="btn btn-primary">Vraag offerte aan</a>
-              <a href="diensten.html" class="btn btn-outline">Onze diensten</a>
-            </div>
-          </div>
-        </div>
-        <button class="hero-prev" aria-label="Vorige">‹</button>
-        <button class="hero-next" aria-label="Volgende">›</button>
-        <div class="hero-dots" id="heroDots"></div>
       </div>
     </section>
 
-    <!-- Featured projects -->
-    <section class="section-large reveal" data-reveal-delay="0.08" id="featured-projects">
+    <!-- DIENSTEN OVERZICHT -->
+    <section class="section section-dark">
       <div class="container">
-        <p class="eyebrow">Uitgelicht</p>
-        <h2>Grote projectfoto's</h2>
-        <p class="muted">Hoogwaardige foto's van recente realisaties — klik om uit te vergroten.</p>
+        <div class="section-header reveal">
+          <p class="eyebrow">Wat wij doen</p>
+          <h2>Onze diensten</h2>
+          <p>Van eerste schets tot perfecte oplevering — wij nemen elk project van A tot Z op ons.</p>
+        </div>
+        <div class="grid-4">
+          <div class="dienst-card reveal" data-delay="0.05">
+            <div class="dienst-img-wrap">
+              <img src="assets/images/terrassen/278.jpg" alt="Premium terras aanleggen" class="dienst-img" loading="lazy">
+            </div>
+            <div class="dienst-body">
+              <span class="dienst-tag">Terrassen</span>
+              <h3>Terrassen</h3>
+              <p>Hout, composiet, blauwe steen of kasseien — elk terras wordt op maat ontworpen en vakkundig aangelegd.</p>
+              <a href="diensten.html#terrassen" class="dienst-link">Meer info →</a>
+            </div>
+          </div>
+          <div class="dienst-card reveal" data-delay="0.10">
+            <div class="dienst-img-wrap">
+              <img src="assets/images/poolhouses/445.jpg" alt="Poolhouse bouwen op maat" class="dienst-img" loading="lazy">
+            </div>
+            <div class="dienst-body">
+              <span class="dienst-tag">Poolhouses</span>
+              <h3>Poolhouses</h3>
+              <p>Functionele en stijlvolle poolhouses als perfecte verlengstuk van uw leefruimte, volledig op maat.</p>
+              <a href="diensten.html#poolhouses" class="dienst-link">Meer info →</a>
+            </div>
+          </div>
+          <div class="dienst-card reveal" data-delay="0.15">
+            <div class="dienst-img-wrap">
+              <img src="assets/images/afschermingen/378.jpg" alt="Tuinafscherming plaatsen" class="dienst-img" loading="lazy">
+            </div>
+            <div class="dienst-body">
+              <span class="dienst-tag">Afschermingen</span>
+              <h3>Tuinafschermingen</h3>
+              <p>Privacy en esthetiek gecombineerd: duurzame afschermingen die naadloos in uw tuinstijl passen.</p>
+              <a href="diensten.html#afschermingen" class="dienst-link">Meer info →</a>
+            </div>
+          </div>
+          <div class="dienst-card reveal" data-delay="0.20">
+            <div class="dienst-img-wrap">
+              <img src="assets/images/terrassen/264.jpg" alt="Tuinrenovatie België" class="dienst-img" loading="lazy">
+            </div>
+            <div class="dienst-body">
+              <span class="dienst-tag">Renovaties</span>
+              <h3>Tuinrenovaties</h3>
+              <p>Een verouderde tuin nieuw leven inblazen? Wij verzorgen de volledige renovatie met oog voor detail.</p>
+              <a href="diensten.html#renovaties" class="dienst-link">Meer info →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WAAROM YC PROJECTS -->
+    <section class="section">
+      <div class="container">
+        <div class="split">
+          <div>
+            <p class="eyebrow reveal">Waarom YC Projects</p>
+            <h2 class="reveal" data-delay="0.05">Kwaliteit die u ziet.<br>Service die u voelt.</h2>
+            <p class="reveal" data-delay="0.08" style="color:var(--muted);margin-top:.8rem;max-width:48ch">Wij bouwen niet zomaar een tuin. Wij creëren een buitenruimte die bij u past, jarenlang mooi blijft en echt waarde toevoegt aan uw woning.</p>
+            <div class="feature-list">
+              <div class="feature-item reveal" data-delay="0.10">
+                <div class="feature-icon">🏆</div>
+                <div class="feature-text">
+                  <h4>Meer dan 15 jaar vakmanschap</h4>
+                  <p>Jarenlange ervaring in premium buitenprojecten in heel België.</p>
+                </div>
+              </div>
+              <div class="feature-item reveal" data-delay="0.13">
+                <div class="feature-icon">📐</div>
+                <div class="feature-text">
+                  <h4>Volledig op maat</h4>
+                  <p>Elk project begint met een grondige analyse van uw wensen, ruimte en stijl.</p>
+                </div>
+              </div>
+              <div class="feature-item reveal" data-delay="0.16">
+                <div class="feature-icon">✅</div>
+                <div class="feature-text">
+                  <h4>Transparante communicatie</h4>
+                  <p>Duidelijke offertes, vaste prijsafspraken en regelmatige opvolging.</p>
+                </div>
+              </div>
+              <div class="feature-item reveal" data-delay="0.19">
+                <div class="feature-icon">🌿</div>
+                <div class="feature-text">
+                  <h4>Duurzame materialen</h4>
+                  <p>Wij werken uitsluitend met kwalitatieve, weerbestendige materialen voor maximale levensduur.</p>
+                </div>
+              </div>
+            </div>
+            <a href="contact.html" class="btn btn-primary reveal" data-delay="0.22" style="margin-top:2rem">Gratis kennismaking →</a>
+          </div>
+          <div class="split-img reveal" data-delay="0.1">
+            <img src="assets/images/poolhouses/6044.jpg" alt="YC Projects — premium poolhouse realisatie" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- UITGELICHTE PROJECTEN -->
+    <section class="section section-dark">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="eyebrow">Realisaties</p>
+          <h2>Uitgelichte projecten</h2>
+          <p>Een greep uit onze meest recente en indrukwekkende realisaties.</p>
+        </div>
         <div class="projects-grid">
-          <article class="project-card">
-            <img src="assets/images/terrassen/278.jpg" alt="Modern stenen terras met premium afwerking">
-            <div class="project-content"><h3>Modern houten terras</h3><p class="muted">Terras — Volledig op maat</p></div>
-          </article>
-          <article class="project-card">
-            <img src="assets/images/poolhouses/445.jpg" alt="Luxe poolhouse met premium afwerking">
-            <div class="project-content"><h3>Luxe poolhouse</h3><p class="muted">Poolhouse — Luxe afwerking</p></div>
-          </article>
-          <article class="project-card">
-            <img src="assets/images/afschermingen/378.jpg" alt="Moderne tuinafscherming">
-            <div class="project-content"><h3>Moderne afscherming</h3><p class="muted">Afscherming — Privacy & stijl</p></div>
-          </article>
+          <div class="project-card reveal" data-delay="0.05">
+            <div class="project-card-img">
+              <img src="assets/images/terrassen/374.jpg" alt="Houten terras rondom zwembad" loading="lazy">
+            </div>
+            <div class="project-card-body">
+              <p class="type">Terras</p>
+              <h3>Terras rondom zwembad</h3>
+              <p>Rondomterras in duurzaam hardhout, perfect geïntegreerd rondom het zwembad.</p>
+            </div>
+          </div>
+          <div class="project-card reveal" data-delay="0.10">
+            <div class="project-card-img">
+              <img src="assets/images/poolhouses/489.jpg" alt="Luxe poolhouse met schuifpui" loading="lazy">
+            </div>
+            <div class="project-card-body">
+              <p class="type">Poolhouse</p>
+              <h3>Luxe poolhouse met schuifpui</h3>
+              <p>Modern poolhouse met donkere gevelbekleding en grote schuifpui.</p>
+            </div>
+          </div>
+          <div class="project-card reveal" data-delay="0.15">
+            <div class="project-card-img">
+              <img src="assets/images/terrassen/368.jpg" alt="Rond houten terras-element" loading="lazy">
+            </div>
+            <div class="project-card-body">
+              <p class="type">Terras</p>
+              <h3>Rond houten terras-element</h3>
+              <p>Uniek rond houten terrasvlak gecombineerd met kasseien — een echte blikvanger.</p>
+            </div>
+          </div>
+        </div>
+        <div style="text-align:center;margin-top:2.5rem">
+          <a href="referenties.html" class="btn btn-ghost reveal" data-delay="0.2">Alle realisaties bekijken →</a>
         </div>
       </div>
     </section>
 
-    <!-- Before / After example -->
-    <section class="section-large section-dark reveal" data-reveal-delay="0.1">
+    <!-- PROJECTPROCES -->
+    <section class="section">
       <div class="container">
-        <p class="eyebrow">Voor & Na</p>
-        <h2>Transformaties in één beeld</h2>
-        <p class="muted">Bekijk een voorbeeld van een volledige tuinrenovatie met voor/na schuifregelaar.</p>
-        <div class="before-after" id="beforeAfter">
-          <img class="after" src="assets/images/poolhouses/446.jpg" alt="Na renovatie">
-          <img class="before" src="assets/images/poolhouses/500.jpg" alt="Voor renovatie">
-          <input type="range" min="0" max="100" value="50" id="baRange" aria-label="Voor na slider">
+        <div class="section-header reveal">
+          <p class="eyebrow">Hoe werkt het?</p>
+          <h2>Uw project in 5 stappen</h2>
+          <p>Een helder en transparant proces van eerste contact tot perfecte oplevering.</p>
+        </div>
+        <div class="process-steps">
+          <div class="process-step reveal" data-delay="0.05">
+            <div class="step-num">1</div>
+            <h4>Kennismaking</h4>
+            <p>Vrijblijvend gesprek en bezoek ter plaatse om uw wensen te bespreken.</p>
+          </div>
+          <div class="process-step reveal" data-delay="0.10">
+            <div class="step-num">2</div>
+            <h4>Ontwerp</h4>
+            <p>Op maat gemaakt voorstel met materiaalkeuze en visuele schets.</p>
+          </div>
+          <div class="process-step reveal" data-delay="0.15">
+            <div class="step-num">3</div>
+            <h4>Offerte</h4>
+            <p>Duidelijke en transparante offerte zonder verrassingen achteraf.</p>
+          </div>
+          <div class="process-step reveal" data-delay="0.20">
+            <div class="step-num">4</div>
+            <h4>Uitvoering</h4>
+            <p>Vakkundige realisatie door ons team met oog voor elk detail.</p>
+          </div>
+          <div class="process-step reveal" data-delay="0.25">
+            <div class="step-num">5</div>
+            <h4>Oplevering</h4>
+            <p>Nauwkeurige eindcontrole, oplevering en garantie op alle werken.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Testimonials and trust -->
-    <section class="section-large reveal" data-reveal-delay="0.12">
+    <!-- KLANTREVIEWS -->
+    <section class="section section-dark">
       <div class="container">
-        <p class="eyebrow">Wat klanten zeggen</p>
-        <h2>Beoordelingen & testimonials</h2>
+        <div class="section-header reveal">
+          <p class="eyebrow">Wat klanten zeggen</p>
+          <h2>Reviews</h2>
+          <p>Lees wat onze klanten ervaren na hun samenwerking met YC Projects.</p>
+        </div>
         <div class="grid-3">
-          <article class="testimonial-card">
-            <p>"YC Projects leverde een prachtig, onderhoudsvriendelijk terras. Ze denken met je mee en werken netjes."</p>
-            <footer>- Familie De Smet</footer>
-          </article>
-          <article class="testimonial-card">
-            <p>"Ons poolhouse is van topkwaliteit — professioneel team en perfecte uitvoering."</p>
-            <footer>- Jan & Sophie</footer>
-          </article>
-          <article class="testimonial-card">
-            <p>"Snelle communicatie en een transparante offerte. Heel tevreden met het resultaat."</p>
-            <footer>- Els V.</footer>
-          </article>
-        </div>
-        <div class="trust-row">
-          <div class="trust-item">Gecertificeerde vakmensen</div>
-          <div class="trust-item">Garantie op uitvoering</div>
-          <div class="trust-item">Duurzame materialen</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Why choose + process + FAQ -->
-    <section class="section-large section-dark reveal" data-reveal-delay="0.14">
-      <div class="container split-grid">
-        <div>
-          <p class="eyebrow">Waarom YC Projects</p>
-          <h2>Professioneel, betrouwbaar en esthetisch</h2>
-          <ul class="checklist">
-            <li>Persoonlijk ontwerp op maat</li>
-            <li>Hoogwaardige materialen en afwerking</li>
-            <li>Transparante offertes en planning</li>
-          </ul>
-          <h3 style="margin-top:1.4rem">Ons projectproces (5 stappen)</h3>
-          <ol class="process-list">
-            <li>Kennismaking & locatiebezoek</li>
-            <li>Concept & voorstel</li>
-            <li>Definitief ontwerp & planning</li>
-            <li>Uitvoering & kwaliteitscontrole</li>
-            <li>Oplevering & nazorg</li>
-          </ol>
-        </div>
-        <div>
-          <h3>Veelgestelde vragen</h3>
-          <div class="faq">
-            <details>
-              <summary>Hoe snel kan ik een offerte ontvangen?</summary>
-              <p>Na de eerste informatie kan een richtprijs binnen 3 werkdagen volgen; een volledige offerte na locatiebezoek.</p>
-            </details>
-            <details>
-              <summary>Werkt YC Projects met garantie?</summary>
-              <p>Ja, we bieden garantie op constructie en afwerking volgens projectvoorwaarden.</p>
-            </details>
-            <details>
-              <summary>Kan ik mijn eigen materialen kiezen?</summary>
-              <p>Zeker — wij adviseren en kunnen materialen leveren of werken met door u gekozen materialen.</p>
-            </details>
+          <div class="testimonial-card reveal" data-delay="0.05">
+            <div class="t-stars">★★★★★</div>
+            <blockquote>"YC Projects heeft onze tuin volledig getransformeerd. Het terras en de afscherming zijn prachtig afgewerkt en precies zoals we ons hadden voorgesteld. Absolute aanrader!"</blockquote>
+            <div class="t-author">
+              <div class="t-avatar">FV</div>
+              <div><p class="t-name">Familie Vandenberghe</p><p class="t-loc">Gent</p></div>
+            </div>
+          </div>
+          <div class="testimonial-card reveal" data-delay="0.10">
+            <div class="t-stars">★★★★★</div>
+            <blockquote>"Professioneel, punctueel en kwaliteitsvol werk. Ons poolhouse is exact geworden wat we voor ogen hadden. Vlotte communicatie van begin tot einde."</blockquote>
+            <div class="t-author">
+              <div class="t-avatar">KM</div>
+              <div><p class="t-name">Kevin & Marlies De Smet</p><p class="t-loc">Antwerpen</p></div>
+            </div>
+          </div>
+          <div class="testimonial-card reveal" data-delay="0.15">
+            <div class="t-stars">★★★★★</div>
+            <blockquote>"Van ontwerp tot oplevering: een topteam. Onze volledige tuinrenovatie is geworden tot een ruimte waar we elke dag van genieten. Fantastisch resultaat!"</blockquote>
+            <div class="t-author">
+              <div class="t-avatar">EV</div>
+              <div><p class="t-name">Els Vermeersch</p><p class="t-loc">Brugge</p></div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section-large section-dark reveal" data-reveal-delay="0.1">
-      <div class="container grid-3">
-        <article class="feature-card reveal" data-reveal-delay="0.12">
-          <h3>Terrassen</h3>
-          <p>Modern, onderhoudsvriendelijk en ontworpen voor comfort. Elk terras wordt gebouwd met duurzame materialen en een verfijnde afwerking.</p>
-        </article>
-        <article class="feature-card reveal" data-reveal-delay="0.14">
-          <h3>Poolhouses</h3>
-          <p>Premium poolhouses die zowel functionaliteit als esthetiek combineren. Ideaal voor ontspanning, gastvrijheid en extra wooncomfort.</p>
-        </article>
-        <article class="feature-card reveal" data-reveal-delay="0.16">
-          <h3>Tuinafschermingen</h3>
-          <p>Op maat gemaakte afscheidingen voor privacy en sfeer. Stevige constructies met een strakke, moderne uitstraling.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section-large reveal" data-reveal-delay="0.1">
-      <div class="container split-grid">
-        <div>
-            <p class="eyebrow">YC Projects — Buitenruimtes op maat</p>
-            <h1 class="hero-headline">Tijdloze terrassen & exclusieve poolhouses — vakmanschap uit België</h1>
-            <p class="hero-lead">Wij ontwerpen en realiseren hoogwaardige tuinprojecten met aandacht voor materialen, afwerking en levenslang plezier.</p>
-            <div class="hero-actions">
-                <a href="contact.html#contact-form" class="btn btn-primary">Offerte aanvragen</a>
-                <a href="contact.html" class="btn btn-outline">Contact opnemen</a>
-              </div>
-              <div class="trust-bar">
-                <span>Snelle respons</span>
-                <span>Transparante offertes</span>
-                <span>Vakkundige uitvoering</span>
-              </div>
+    <!-- FAQ -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="eyebrow">Veelgestelde vragen</p>
+          <h2>FAQ</h2>
+          <p>Antwoorden op de meest gestelde vragen over onze diensten en werkwijze.</p>
         </div>
-        <div class="stats-card reveal" data-reveal-delay="0.15">
-          <div>
-            <span class="stat-number">15+</span>
-            <p>jaar ervaring</p>
+        <div class="faq-grid">
+          <div class="faq-item">
+            <button class="faq-q">Wat kost een terras laten aanleggen? <span class="faq-icon">+</span></button>
+            <div class="faq-a"><p>De kostprijs van een terras hangt af van materiaal, afmetingen en complexiteit. Een houten terras start doorgaans vanaf €80/m², composiet en natuursteen liggen hoger. Vraag een vrijblijvende offerte aan voor een exacte prijsopgave.</p></div>
           </div>
-          <div>
-            <span class="stat-number">120+</span>
-            <p>projecten afgerond</p>
+          <div class="faq-item">
+            <button class="faq-q">Hoe lang duurt de aanleg van een terras? <span class="faq-icon">+</span></button>
+            <div class="faq-a"><p>Een standaard terras van 30–50 m² wordt doorgaans in 2 à 4 werkdagen gerealiseerd. Bij grotere projecten of complexe ondergrond kan dit oplopen tot 1 à 2 weken. We stemmen de planning steeds vooraf met u af.</p></div>
           </div>
-          <div>
-            <span class="stat-number">98%</span>
-            <p>klanttevredenheid</p>
+          <div class="faq-item">
+            <button class="faq-q">Welke materialen gebruikt u voor terrassen? <span class="faq-icon">+</span></button>
+            <div class="faq-a"><p>We werken met hardhout, composiet, blauwe hardsteen, keramische tegels en kasseien. Elk materiaal heeft zijn eigen voordelen qua onderhoud, uitstraling en levensduur. We adviseren u graag over de beste keuze voor uw situatie.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q">Bouwt u poolhouses volledig op maat? <span class="faq-icon">+</span></button>
+            <div class="faq-a"><p>Ja, elk poolhouse wordt volledig op maat ontworpen en gebouwd. We houden rekening met de stijl van uw woning, uw wensen qua indeling en de beschikbare ruimte. Zowel klassieke als moderne stijlen zijn mogelijk.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q">In welke regio's bent u actief? <span class="faq-icon">+</span></button>
+            <div class="faq-a"><p>YC Projects is actief in heel België, met de focus op Vlaanderen. Aarzel niet om contact op te nemen, ook als u buiten onze standaardregio woont — we bekijken graag de mogelijkheden.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q">Hoe vraag ik een offerte aan? <span class="faq-icon">+</span></button>
+            <div class="faq-a"><p>U kunt een offerte aanvragen via ons contactformulier, per e-mail of telefoon. We plannen dan een vrijblijvend bezoek ter plaatse om uw project te bespreken en een nauwkeurige offerte op te maken.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q">Heeft u referenties van eerdere projecten? <span class="faq-icon">+</span></button>
+            <div class="faq-a"><p>Ja, op onze referentiespagina vindt u een uitgebreide selectie van gerealiseerde projecten. We kunnen u ook in contact brengen met eerdere klanten die bereid zijn hun ervaring te delen.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q">Geeft u garantie op uitgevoerde werken? <span class="faq-icon">+</span></button>
+            <div class="faq-a"><p>Ja, wij geven garantie op al onze werken. De exacte garantieperiode wordt vastgelegd in de offerte en varieert naargelang het type werk en de gebruikte materialen. Uw investering is bij ons in veilige handen.</p></div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section-large section-dark cta-strip reveal" data-reveal-delay="0.1">
-      <div class="container cta-card">
-        <div>
-          <p class="eyebrow">Klaar voor uw nieuwe tuin?</p>
-          <h2>Ontvang een vrijblijvend projectvoorstel</h2>
-          <p>Vraag vandaag nog een vrijblijvende offerte aan en ontdek hoe YC Projects uw tuin transformeert.</p>
+    <!-- CTA BANNER -->
+    <section class="section-sm">
+      <div class="container">
+        <div class="cta-banner reveal">
+          <p class="eyebrow">Klaar om te starten?</p>
+          <h2>Maak van uw tuin een premium buitenruimte</h2>
+          <p>Vraag vandaag nog een vrijblijvende offerte aan. Wij bezoeken u ter plaatse en maken een persoonlijk voorstel op maat.</p>
+          <div class="cta-actions">
+            <a href="contact.html" class="btn btn-primary btn-lg">Offerte aanvragen</a>
+            <a href="referenties.html" class="btn btn-ghost btn-lg">Onze realisaties</a>
+          </div>
         </div>
-        <a href="contact.html" class="btn btn-primary">Offerte aanvragen</a>
       </div>
     </section>
+
   </main>
 
+  <!-- FOOTER -->
   <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>
-        <p class="footer-brand">YC Projects</p>
-        <p>Professionele tuinprojecten in België met een premium uitstraling.</p>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <div class="footer-logo">
+            <img src="assets/images/YC Projects_logo.png" alt="YC Projects" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+            <span class="footer-logo-text" style="display:none">YC Projects</span>
+          </div>
+          <p>Premium buitenprojecten in België. Meer dan 15 jaar vakmanschap in terrassen, poolhouses, tuinafschermingen en renovaties.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigatie</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="diensten.html">Diensten</a></li>
+            <li><a href="referenties.html">Referenties</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Diensten</h4>
+          <ul>
+            <li><a href="diensten.html#terrassen">Terrassen</a></li>
+            <li><a href="diensten.html#poolhouses">Poolhouses</a></li>
+            <li><a href="diensten.html#afschermingen">Tuinafschermingen</a></li>
+            <li><a href="diensten.html#renovaties">Tuinrenovaties</a></li>
+          </ul>
+        </div>
       </div>
-      <div>
-        <p>Contact</p>
-        <p>info@ycprojects.be</p>
-        <p>+32 470 123 456</p>
+      <div class="footer-bottom">
+        <span>© 2025 YC Projects — Alle rechten voorbehouden</span>
+        <span>Werkgebied: <a href="contact.html">België</a></span>
       </div>
     </div>
   </footer>

@@ -3,117 +3,225 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact — YC Projects | Vraag uw offerte aan</title>
-  <meta name="description" content="Neem contact op met YC Projects voor een vrijblijvende offerte voor terrassen, poolhouses of tuinrenovaties in België." />
+  <title>Contact — YC Projects | Offerte aanvragen voor uw tuinproject</title>
+  <meta name="description" content="Neem contact op met YC Projects voor een vrijblijvende offerte. Terrassen, poolhouses, tuinafschermingen en renovaties in België." />
   <meta property="og:title" content="Contact — YC Projects" />
-  <meta property="og:description" content="Vraag een offerte aan of stuur uw projectdetails naar YC Projects — professionals in tuinprojecten in België." />
+  <meta property="og:description" content="Vraag een vrijblijvende offerte aan voor uw tuinproject. YC Projects — premium buitenprojecten in België." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="premium.css" />
 </head>
 <body>
+
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand logo-link" href="index.html">
-        <img src="assets/images/YC Projects_logo.png" alt="YC Projects logo" class="logo">
+      <a href="index.html" class="logo-link" aria-label="YC Projects — Home">
+        <img src="assets/images/YC Projects_logo.png" alt="YC Projects" class="logo" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+        <span class="logo-text" style="display:none">YC Projects</span>
       </a>
-      <button class="nav-toggle" id="navToggle" aria-label="Open navigatie" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu openen" aria-expanded="false">
+        <span></span><span></span><span></span>
       </button>
       <nav class="site-nav" id="siteNav">
         <a href="index.html">Home</a>
         <a href="diensten.html">Diensten</a>
         <a href="referenties.html">Referenties</a>
-        <a href="contact.html" class="nav-cta">Contact</a>
+        <a href="contact.html" class="nav-cta active">Offerte aanvragen</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <section class="section-large reveal" data-reveal-delay="0.05">
+
+    <section class="page-hero">
       <div class="container">
-        <p class="eyebrow">Contact</p>
-        <h1>Wij helpen uw tuinidee tot leven te brengen</h1>
-        <p>Vraag een vrijblijvend gesprek aan en ontdek hoe YC Projects uw tuin vakkundig kan transformeren.</p>
+        <p class="eyebrow reveal">Vrijblijvend contact</p>
+        <h1 class="reveal" data-delay="0.05">Breng uw tuinidee<br>tot leven</h1>
+        <p class="reveal" data-delay="0.08">Vraag een vrijblijvend gesprek aan. Wij bezoeken u ter plaatse, bespreken uw wensen en maken een persoonlijk voorstel op maat.</p>
       </div>
     </section>
 
-    <section class="section-large section-dark reveal" data-reveal-delay="0.1">
-      <div class="container contact-grid">
-        <div class="contact-details reveal" data-reveal-delay="0.12">
-          <h2>Contactgegevens</h2>
-          <p>YC Projects</p>
-          <p>info@ycprojects.be</p>
-          <p>+32 470 123 456</p>
-          <p>België</p>
-        </div>
-          <form id="contact-form" class="contact-form" novalidate>
-            <label>
-              Naam
-              <input type="text" name="name" id="name" placeholder="Uw naam" required />
-            </label>
-            <label>
-              E-mail
-              <input type="email" name="email" id="email" placeholder="Uw e-mail" required />
-            </label>
-            <label>
-              Telefoon
-              <input type="tel" name="phone" id="phone" placeholder="Uw telefoonnummer" />
-            </label>
-            <label>
-              Type project
-              <select name="projectType" id="projectType">
-                <option value="Terras">Terras</option>
-                <option value="Poolhouse">Poolhouse</option>
-                <option value="Tuinafscherming">Tuinafscherming</option>
-                <option value="Tuinrenovatie">Tuinrenovatie</option>
-                <option value="Overig">Overig</option>
-              </select>
-            </label>
-            <label>
-              Beschrijving project
-              <textarea name="message" id="message" rows="6" placeholder="Vertel ons over uw project, afmetingen of wensen" required></textarea>
-            </label>
-            <div class="form-actions">
-              <button type="submit" class="btn btn-primary">Offerte aanvragen</button>
-              <button type="button" class="btn btn-outline" id="contact-clear">Formulier leegmaken</button>
+    <section class="section">
+      <div class="container">
+        <div class="contact-grid">
+
+          <!-- CONTACT INFO -->
+          <div class="contact-info reveal">
+            <p class="eyebrow">Contactgegevens</p>
+            <h2>Neem contact op</h2>
+            <p>Heeft u een vraag of wenst u een offerte? Wij staan voor u klaar. Vul het formulier in of neem direct contact op.</p>
+            <div class="contact-details">
+              <div class="c-detail">
+                <div class="c-icon">📞</div>
+                <div>
+                  <p class="c-label">Telefoon</p>
+                  <p class="c-value">+32 470 123 456</p>
+                </div>
+              </div>
+              <div class="c-detail">
+                <div class="c-icon">✉️</div>
+                <div>
+                  <p class="c-label">E-mail</p>
+                  <p class="c-value">info@ycprojects.be</p>
+                </div>
+              </div>
+              <div class="c-detail">
+                <div class="c-icon">📍</div>
+                <div>
+                  <p class="c-label">Werkgebied</p>
+                  <p class="c-value">Heel België</p>
+                </div>
+              </div>
+              <div class="c-detail">
+                <div class="c-icon">🕐</div>
+                <div>
+                  <p class="c-label">Bereikbaarheid</p>
+                  <p class="c-value">Ma–Vr: 8u – 18u</p>
+                </div>
+              </div>
             </div>
-            <p class="form-note">Uw gegevens worden veilig behandeld. Dit formulier is voorbereid voor toekomstige e-mailintegratie.</p>
-          </form>
+          </div>
+
+          <!-- CONTACT FORM -->
+          <div class="form-card reveal" data-delay="0.08" id="contact-form">
+            <h3>Offerte aanvragen</h3>
+            <p>Vul het formulier in en wij nemen binnen 24 uur contact met u op.</p>
+            <form id="contactForm" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="naam">Naam *</label>
+                  <input type="text" id="naam" name="naam" placeholder="Uw naam" required autocomplete="name" />
+                </div>
+                <div class="form-group">
+                  <label for="telefoon">Telefoon</label>
+                  <input type="tel" id="telefoon" name="telefoon" placeholder="+32 ..." autocomplete="tel" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="email">E-mailadres *</label>
+                <input type="email" id="email" name="email" placeholder="uw@email.be" required autocomplete="email" />
+              </div>
+              <div class="form-group">
+                <label for="project">Type project</label>
+                <select id="project" name="project">
+                  <option value="">Selecteer een type</option>
+                  <option value="Terras">Terras</option>
+                  <option value="Poolhouse">Poolhouse</option>
+                  <option value="Tuinafscherming">Tuinafscherming</option>
+                  <option value="Tuinrenovatie">Tuinrenovatie</option>
+                  <option value="Combinatie">Combinatie van meerdere</option>
+                  <option value="Overig">Overig / Nog niet zeker</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="bericht">Beschrijving van uw project *</label>
+                <textarea id="bericht" name="bericht" rows="5" placeholder="Vertel ons over uw project: afmetingen, materiaalvoorkeur, timing, ..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-lg" style="width:100%">Offerte aanvragen →</button>
+              <div id="formSuccess" class="form-success">✓ Bedankt! Uw aanvraag is ontvangen. Wij nemen binnen 24 uur contact op.</div>
+              <p class="form-note">🔒 Uw gegevens worden vertrouwelijk behandeld en nooit gedeeld met derden.</p>
+            </form>
+          </div>
+
+        </div>
       </div>
     </section>
 
-    <section class="section-large reveal" data-reveal-delay="0.1">
-      <div class="container split-grid">
-        <div>
-          <h2>Waarom YC Projects?</h2>
-          <p>Wij combineren technische expertise met een hoogwaardige designaanpak. Daardoor krijgt u een tuin die zowel stijlvol als duurzaam is.</p>
+    <!-- FAQ -->
+    <section class="section section-dark">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="eyebrow">Veelgestelde vragen</p>
+          <h2>Heeft u een vraag?</h2>
+          <p>Hieronder vindt u antwoorden op de meest gestelde vragen. Staat uw vraag er niet bij? Neem gerust contact op.</p>
         </div>
-        <div>
-          <ul class="checklist">
-            <li>Persoonlijke begeleiding</li>
-            <li>Strakke planning</li>
-            <li>Hoogwaardige materialen</li>
-          </ul>
+        <div class="faq-grid">
+          <div class="faq-item reveal" data-delay="0.05">
+            <button class="faq-q">Hoe snel krijg ik een offerte? <span class="faq-icon">+</span></button>
+            <div class="faq-a"><p>Na uw aanvraag plannen wij een vrijblijvend bezoek ter plaatse. Binnen 5 werkdagen na het bezoek ontvangt u een gedetailleerde offerte op maat.</p></div>
+          </div>
+          <div class="faq-item reveal" data-delay="0.08">
+            <button class="faq-q">Is een offerte aanvragen gratis? <span class="faq-icon">+</span></button>
+            <div class="faq-a"><p>Ja, een offerte aanvragen is volledig gratis en vrijblijvend. Er zijn geen kosten verbonden aan het intakegesprek of de opmaak van de offerte.</p></div>
+          </div>
+          <div class="faq-item reveal" data-delay="0.05">
+            <button class="faq-q">Wat kost een terras laten aanleggen? <span class="faq-icon">+</span></button>
+            <div class="faq-a"><p>De prijs varieert naargelang materiaal, oppervlakte en complexiteit. Een houten terras start rond €80/m², composiet en hardsteen liggen hoger. Vraag een offerte aan voor een exacte prijs.</p></div>
+          </div>
+          <div class="faq-item reveal" data-delay="0.08">
+            <button class="faq-q">Hoe lang duurt een terrasbouw? <span class="faq-icon">+</span></button>
+            <div class="faq-a"><p>Een standaard terras van 30–50 m² wordt in 2 à 4 werkdagen gerealiseerd. Bij grotere of complexere projecten loopt de uitvoeringstijd op tot 1 à 2 weken.</p></div>
+          </div>
+          <div class="faq-item reveal" data-delay="0.05">
+            <button class="faq-q">In welke regio's werkt YC Projects? <span class="faq-icon">+</span></button>
+            <div class="faq-a"><p>Wij zijn actief in heel België, met de nadruk op Vlaanderen. Neem gerust contact op en wij bekijken samen de mogelijkheden voor uw locatie.</p></div>
+          </div>
+          <div class="faq-item reveal" data-delay="0.08">
+            <button class="faq-q">Geeft u garantie op uw werken? <span class="faq-icon">+</span></button>
+            <div class="faq-a"><p>Ja, wij geven garantie op al onze werken. De garantieperiode wordt vastgelegd in de overeenkomst en verschilt naargelang het type werk en de gebruikte materialen.</p></div>
+          </div>
+          <div class="faq-item reveal" data-delay="0.05">
+            <button class="faq-q">Kan ik zelf de materialen kiezen? <span class="faq-icon">+</span></button>
+            <div class="faq-a"><p>Absoluut. Tijdens het intakegesprek bespreken wij alle mogelijkheden en adviseren wij u over de beste keuze voor uw project, budget en stijl. U maakt steeds de finale keuze.</p></div>
+          </div>
+          <div class="faq-item reveal" data-delay="0.08">
+            <button class="faq-q">Werkt YC Projects ook voor bedrijven? <span class="faq-icon">+</span></button>
+            <div class="faq-a"><p>Ja, wij realiseren ook projecten voor bedrijven, kantoren en handelspanden. Neem contact op voor een gepersonaliseerde offerte voor uw zakelijk project.</p></div>
+          </div>
         </div>
       </div>
     </section>
+
+    <!-- CTA -->
+    <section class="section-sm">
+      <div class="container">
+        <div class="cta-banner reveal">
+          <p class="eyebrow">Klaar voor de eerste stap?</p>
+          <h2>Vraag vandaag uw gratis offerte aan</h2>
+          <p>Wij bezoeken u ter plaatse, bespreken uw wensen en bezorgen u een transparante offerte op maat.</p>
+          <div class="cta-actions">
+            <a href="#contact-form" class="btn btn-primary btn-lg">Offerte aanvragen</a>
+            <a href="referenties.html" class="btn btn-ghost btn-lg">Realisaties bekijken</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>
-        <p class="footer-brand">YC Projects</p>
-        <p>Professionele tuinprojecten in België met een premium uitstraling.</p>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <div class="footer-logo">
+            <img src="assets/images/YC Projects_logo.png" alt="YC Projects" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+            <span class="footer-logo-text" style="display:none">YC Projects</span>
+          </div>
+          <p>Premium buitenprojecten in België. Meer dan 15 jaar vakmanschap in terrassen, poolhouses, tuinafschermingen en renovaties.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigatie</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="diensten.html">Diensten</a></li>
+            <li><a href="referenties.html">Referenties</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Diensten</h4>
+          <ul>
+            <li><a href="diensten.html#terrassen">Terrassen</a></li>
+            <li><a href="diensten.html#poolhouses">Poolhouses</a></li>
+            <li><a href="diensten.html#afschermingen">Tuinafschermingen</a></li>
+            <li><a href="diensten.html#renovaties">Tuinrenovaties</a></li>
+          </ul>
+        </div>
       </div>
-      <div>
-        <p>Contact</p>
-        <p>info@ycprojects.be</p>
-        <p>+32 470 123 456</p>
+      <div class="footer-bottom">
+        <span>© 2025 YC Projects — Alle rechten voorbehouden</span>
+        <span>Werkgebied: <a href="contact.html">België</a></span>
       </div>
     </div>
   </footer>
