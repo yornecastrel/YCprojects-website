@@ -17,7 +17,7 @@
   --radius:     14px;
   --radius-l:   22px;
   --max-w:      1200px;
-  --nav-h:      110px;
+  --nav-h:      96px;
 }
 
 /* ── Reset ── */
@@ -593,9 +593,9 @@ h4 { font-size: 1rem; font-weight: 700; }
 }
 
 @media (max-width: 768px) {
-  :root { --nav-h: 88px; }
-  .logo-link { height: 70px; }
-  .logo { height: 200px; margin-top: -56px; }
+  :root { --nav-h: 76px; }
+  .logo-link { height: 66px; }
+  .logo { height: 190px; margin-top: -53px; }
   .section { padding: 3.5rem 0; }
   h1 { font-size: clamp(1.9rem,7vw,2.6rem); }
   .grid-2, .grid-3 { grid-template-columns: 1fr; }
