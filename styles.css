@@ -204,7 +204,7 @@ h4 { font-size: 1rem; font-weight: 700; }
 .hero-bg {
   position: absolute; inset: 0;
   background-size: cover;
-  background-position: center top;
+  background-position: center 30%;
 }
 .hero-overlay {
   position: absolute; inset: 0;
@@ -224,6 +224,13 @@ h4 { font-size: 1rem; font-weight: 700; }
 }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 1rem; }
 .hero-actions .btn { border-radius: 6px; }
+.hero-actions .btn-primary {
+  background: #2a9e38;
+  border-radius: 4px;
+  font-weight: 500;
+  box-shadow: none;
+}
+.hero-actions .btn-primary:hover { box-shadow: none; opacity: 0.9; }
 .hero-stats {
   display: flex;
   gap: 2.5rem;
